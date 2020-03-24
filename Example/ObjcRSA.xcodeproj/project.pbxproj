@@ -22,8 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A49E5FF827BCF416FB4518F9 /* Pods_ObjcRSA_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2450502E523CB369F91C69 /* Pods_ObjcRSA_Tests.framework */; };
-		F9BED113E440575A2ED8FB13 /* Pods_ObjcRSA_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76A78CA904CF2EAF97A45CC /* Pods_ObjcRSA_Example.framework */; };
+		8E139A4B2DF2D9B7D8E7159B /* libPods-ObjcRSA_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB039B7B839648689174E0F0 /* libPods-ObjcRSA_Example.a */; };
+		E5E6FBF50BEBF34F4414660C /* libPods-ObjcRSA_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E89F968388575D0E8E665B0 /* libPods-ObjcRSA_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2AE46EA6F6D30B1E9BA2B9B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3E89F968388575D0E8E665B0 /* libPods-ObjcRSA_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcRSA_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2CD5CB21CC9A649E2ED1EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ObjcRSA_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcRSA_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,14 +60,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		608B5E22399B9F1D02D52D88 /* ObjcRSA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ObjcRSA.podspec; path = ../ObjcRSA.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6C2450502E523CB369F91C69 /* Pods_ObjcRSA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcRSA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7356C4DF4C69F7A017C00843 /* Pods-ObjcRSA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcRSA_Tests.release.xcconfig"; path = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB039B7B839648689174E0F0 /* libPods-ObjcRSA_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcRSA_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9D3FCF9C119E59698295DF /* Pods-ObjcRSA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcRSA_Example.debug.xcconfig"; path = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D7EC69F6D610C631711332D6 /* Pods-ObjcRSA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcRSA_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E17201C44F9745458DE6F73B /* Pods-ObjcRSA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcRSA_Example.release.xcconfig"; path = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E76A78CA904CF2EAF97A45CC /* Pods_ObjcRSA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcRSA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F9BED113E440575A2ED8FB13 /* Pods_ObjcRSA_Example.framework in Frameworks */,
+				8E139A4B2DF2D9B7D8E7159B /* libPods-ObjcRSA_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A49E5FF827BCF416FB4518F9 /* Pods_ObjcRSA_Tests.framework in Frameworks */,
+				E5E6FBF50BEBF34F4414660C /* libPods-ObjcRSA_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				E76A78CA904CF2EAF97A45CC /* Pods_ObjcRSA_Example.framework */,
-				6C2450502E523CB369F91C69 /* Pods_ObjcRSA_Tests.framework */,
+				BB039B7B839648689174E0F0 /* libPods-ObjcRSA_Example.a */,
+				3E89F968388575D0E8E665B0 /* libPods-ObjcRSA_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				54148067CDD35C4874C52D2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,24 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54148067CDD35C4874C52D2D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ObjcRSA/ObjcRSA.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcRSA.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B72E0F1FF19A819E8673A3A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

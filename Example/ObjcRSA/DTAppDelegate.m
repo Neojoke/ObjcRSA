@@ -7,7 +7,6 @@
 //
 
 #import "DTAppDelegate.h"
-
 @implementation DTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

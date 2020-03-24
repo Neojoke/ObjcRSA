@@ -7,29 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E5F03B0DF80F39585D46A5945C90E5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
-		2396A575326F4E889D6CC6C0EA7275ED /* ObjcRSA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5358B8DB357AB62F1FCB6D21367310 /* ObjcRSA-dummy.m */; };
-		3AF6F90C654320F38C1E13FBCA844BC7 /* DTRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 784D097B9FC02C6235BCE84022062020 /* DTRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E41E6171479C99E7438355CA879D1AE /* Pods-ObjcRSA_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDD4129E2E0C5F45424FDC51F9F651D /* Pods-ObjcRSA_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6192E1CE27AB648761C72948228D7EE3 /* Pods-ObjcRSA_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01082F7B21364FC493A1C4F7D6E2038 /* Pods-ObjcRSA_Tests-dummy.m */; };
-		6CE972608BCF4A2DA9610F3C10052BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
-		916506C92ACA0303FC60A1AF718276B4 /* DTRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 47111829AB0A74F3B55AA8576DB1F22C /* DTRSA.m */; };
-		A911285A5E2C2BEDD90D80A554F834C3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */; };
-		D4754BFFDE992BF9D46ED10BFB640D21 /* Pods-ObjcRSA_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1802A5AE1D4E21DDC04E6DEDF2F0DC0 /* Pods-ObjcRSA_Example-dummy.m */; };
-		D58DA9CBC6076A1F973FD09B625CE484 /* ObjcRSA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D58C699EF0B8611C83C612B96890CF /* ObjcRSA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0B55C74ED69F2AB8A26B6905312B516 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
-		E7BFBCFA32CA255EE2CF9CF157D8AC49 /* Pods-ObjcRSA_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97EFD92BCB56121BA8DFF5C256926C2D /* Pods-ObjcRSA_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F48EB29F7D86F81F90BBD5FDC05252A /* DTRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A72AB9F02E298775E511D163F96B0 /* DTRSA.m */; };
+		A4CA02B70A1EC6A0A62A4CC1032A1B54 /* Pods-ObjcRSA_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A127CBDF284D594584A655B83FF1C2 /* Pods-ObjcRSA_Example-dummy.m */; };
+		B59D59DB6BBA213D0D05754AAB713ADF /* DTRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E72DBAD4EA71DF09B9F835230BF9B9 /* DTRSA.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D571F3115342DC818BC031DFCBC7F9D8 /* ObjcRSA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD407AC331162265157DF0F5908279B /* ObjcRSA-dummy.m */; };
+		F580A5F1BEC4E430AEC4B4469D26E2AB /* Pods-ObjcRSA_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C950916497AE01D50DFFB34F28474FCA /* Pods-ObjcRSA_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B1431AD4D15389BC15893210E6BC0EC /* PBXContainerItemProxy */ = {
+		4C55A0309521DB98AD5DB54EB8D2DCCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 02E7257DC521AC06C004190D7E273B69;
 			remoteInfo = ObjcRSA;
 		};
-		7B38F978982921CEEAB9D39828EDBABD /* PBXContainerItemProxy */ = {
+		A1C19B9DA406B28E262375840B8A45C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -39,157 +32,130 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02BB92806BFAB4A48A2508111AF2D29D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		04E9401718C27BF9441C5FBD3FB254E9 /* Pods-ObjcRSA_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjcRSA_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0A30AE43FC863D64F22CE0B111E4A937 /* Pods-ObjcRSA_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjcRSA_Example-frameworks.sh"; sourceTree = "<group>"; };
-		133A0C9B8029B273E346D0C4C648BBC0 /* ObjcRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjcRSA.framework; path = ObjcRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AE5960481077007A983A4B6CA324B19 /* Pods_ObjcRSA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjcRSA_Tests.framework; path = "Pods-ObjcRSA_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30434EA68C9B59377DC01D3B66DFE509 /* Pods-ObjcRSA_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Tests-Info.plist"; sourceTree = "<group>"; };
-		34D58C699EF0B8611C83C612B96890CF /* ObjcRSA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcRSA-umbrella.h"; sourceTree = "<group>"; };
-		367C220B93132BDF6F1CD9774315EB36 /* ObjcRSA.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjcRSA.xcconfig; sourceTree = "<group>"; };
-		3DDD4129E2E0C5F45424FDC51F9F651D /* Pods-ObjcRSA_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjcRSA_Example-umbrella.h"; sourceTree = "<group>"; };
-		40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		47111829AB0A74F3B55AA8576DB1F22C /* DTRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTRSA.m; path = ObjcRSA/Classes/DTRSA.m; sourceTree = "<group>"; };
-		4898D26E7D259784A4D2E3564DACE1BB /* Pods-ObjcRSA_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjcRSA_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4B1A6A33FCFD87AF2159B84D84847D18 /* ObjcRSA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ObjcRSA.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		54673E85537A7D4B19239A4050D8A62B /* Pods-ObjcRSA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		702D5C55E29689196793C0E6CB3FE24F /* Pods-ObjcRSA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		71EDCE1194C5DD66E40061F1C4843E3B /* ObjcRSA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcRSA-prefix.pch"; sourceTree = "<group>"; };
-		74571FF5DA42783B8E623D5845971F55 /* Pods-ObjcRSA_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjcRSA_Tests.modulemap"; sourceTree = "<group>"; };
-		784D097B9FC02C6235BCE84022062020 /* DTRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTRSA.h; path = ObjcRSA/Classes/DTRSA.h; sourceTree = "<group>"; };
-		7E5358B8DB357AB62F1FCB6D21367310 /* ObjcRSA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjcRSA-dummy.m"; sourceTree = "<group>"; };
-		7F9415540E484B5B8C0CA87F9DA03639 /* Pods-ObjcRSA_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Example-Info.plist"; sourceTree = "<group>"; };
-		8B31A3214E709BE23F1BF9B609CC2E1A /* Pods-ObjcRSA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8D92F4AADDF38333D27BB63CCAD7F3D0 /* Pods-ObjcRSA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		97EFD92BCB56121BA8DFF5C256926C2D /* Pods-ObjcRSA_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjcRSA_Tests-umbrella.h"; sourceTree = "<group>"; };
+		11A127CBDF284D594584A655B83FF1C2 /* Pods-ObjcRSA_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjcRSA_Example-dummy.m"; sourceTree = "<group>"; };
+		133A0C9B8029B273E346D0C4C648BBC0 /* libObjcRSA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libObjcRSA.a; path = libObjcRSA.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE5960481077007A983A4B6CA324B19 /* libPods-ObjcRSA_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjcRSA_Tests.a"; path = "libPods-ObjcRSA_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5102B4C58B01138ABAF8E91569553B86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		53E820704450A595D12BB26DEE930159 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		72C6136CFFA72DF5448429A69F1C6195 /* Pods-ObjcRSA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9A0A72AB9F02E298775E511D163F96B0 /* DTRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTRSA.m; path = ObjcRSA/Classes/DTRSA.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A01082F7B21364FC493A1C4F7D6E2038 /* Pods-ObjcRSA_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjcRSA_Tests-dummy.m"; sourceTree = "<group>"; };
-		A177659F8E3DDE4FE63FF78C1E1FCD52 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		AD973D6589AE06430B01D0EE8DAFDDAF /* Pods-ObjcRSA_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C1802A5AE1D4E21DDC04E6DEDF2F0DC0 /* Pods-ObjcRSA_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjcRSA_Example-dummy.m"; sourceTree = "<group>"; };
-		D09F8FCF9F373DD51FFE909667460DD2 /* ObjcRSA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjcRSA.modulemap; sourceTree = "<group>"; };
-		DD58E8071E51E2AB552B963624C73629 /* Pods_ObjcRSA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ObjcRSA_Example.framework; path = "Pods-ObjcRSA_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEAF0FC6F898585F8E9A8285B42DB575 /* ObjcRSA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjcRSA-Info.plist"; sourceTree = "<group>"; };
-		EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F7A17EF499970CCA26E1F42DBD083B9C /* Pods-ObjcRSA_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F98A1CF9C8D9447F85F58E8413628F46 /* Pods-ObjcRSA_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjcRSA_Example.modulemap"; sourceTree = "<group>"; };
+		A5F49735F98ED85A3BE827A3F9E671C2 /* ObjcRSA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcRSA-prefix.pch"; sourceTree = "<group>"; };
+		A9DA35C68E5B65DCFD33D92C33E93263 /* Pods-ObjcRSA_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B14FAE46168BDC764D5FB0D75954E95D /* Pods-ObjcRSA_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcRSA_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4E72DBAD4EA71DF09B9F835230BF9B9 /* DTRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTRSA.h; path = ObjcRSA/Classes/DTRSA.h; sourceTree = "<group>"; };
+		B5F3DBD9261E9D28DAA2EFF9B418698D /* Pods-ObjcRSA_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjcRSA_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B702896875950330299949AEB31E34DD /* Pods-ObjcRSA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C326DBB88042E751076F7F08B62BF726 /* ObjcRSA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ObjcRSA.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C950916497AE01D50DFFB34F28474FCA /* Pods-ObjcRSA_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjcRSA_Tests-dummy.m"; sourceTree = "<group>"; };
+		D7DB33AA0BBF0142C240754C35189F7B /* Pods-ObjcRSA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DC4DB340B7F2A8D3D1AF6CA98BE12480 /* Pods-ObjcRSA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcRSA_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DD58E8071E51E2AB552B963624C73629 /* libPods-ObjcRSA_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjcRSA_Example.a"; path = "libPods-ObjcRSA_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E161E8BECAE44D37D71E4BEC9E864CEB /* Pods-ObjcRSA_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjcRSA_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBD407AC331162265157DF0F5908279B /* ObjcRSA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjcRSA-dummy.m"; sourceTree = "<group>"; };
+		FC7E804C87D9560BE540CB800AAB1E0E /* ObjcRSA.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjcRSA.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BD6292366AE0CBA289C643668B7BAB8 /* Frameworks */ = {
+		0C535F9CDFECA78E9573D3BDEBEC9CB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE972608BCF4A2DA9610F3C10052BF5 /* Foundation.framework in Frameworks */,
-				A911285A5E2C2BEDD90D80A554F834C3 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81390788C66F0F2B2809E78F77168954 /* Frameworks */ = {
+		22C53CAE17E22DA0292A5D476FE4A6F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B55C74ED69F2AB8A26B6905312B516 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84C3B6C462D7BCAE914B3E50F47A96D0 /* Frameworks */ = {
+		812A359BA0E8CE0462FBF018FABDE9F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5F03B0DF80F39585D46A5945C90E5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6B475D44F9DE8B3EB70D1C14FDE147B9 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		53C962E7FCC4E95D476ADA5493F40E0D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D09F8FCF9F373DD51FFE909667460DD2 /* ObjcRSA.modulemap */,
-				367C220B93132BDF6F1CD9774315EB36 /* ObjcRSA.xcconfig */,
-				7E5358B8DB357AB62F1FCB6D21367310 /* ObjcRSA-dummy.m */,
-				DEAF0FC6F898585F8E9A8285B42DB575 /* ObjcRSA-Info.plist */,
-				71EDCE1194C5DD66E40061F1C4843E3B /* ObjcRSA-prefix.pch */,
-				34D58C699EF0B8611C83C612B96890CF /* ObjcRSA-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ObjcRSA";
-			sourceTree = "<group>";
-		};
 		6782BF617AD43E1C02482F2D60C7A5A9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B48462BB3C2E9017A62DC46D569E0499 /* ObjcRSA */,
+				7421F59104F43C1A390BD17773E023D7 /* ObjcRSA */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6B475D44F9DE8B3EB70D1C14FDE147B9 /* iOS */ = {
+		7421F59104F43C1A390BD17773E023D7 /* ObjcRSA */ = {
 			isa = PBXGroup;
 			children = (
-				EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */,
-				40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		99B2E24DF87DCC5B4677B876FA98A83D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A177659F8E3DDE4FE63FF78C1E1FCD52 /* LICENSE */,
-				4B1A6A33FCFD87AF2159B84D84847D18 /* ObjcRSA.podspec */,
-				02BB92806BFAB4A48A2508111AF2D29D /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B48462BB3C2E9017A62DC46D569E0499 /* ObjcRSA */ = {
-			isa = PBXGroup;
-			children = (
-				784D097B9FC02C6235BCE84022062020 /* DTRSA.h */,
-				47111829AB0A74F3B55AA8576DB1F22C /* DTRSA.m */,
-				99B2E24DF87DCC5B4677B876FA98A83D /* Pod */,
-				53C962E7FCC4E95D476ADA5493F40E0D /* Support Files */,
+				B4E72DBAD4EA71DF09B9F835230BF9B9 /* DTRSA.h */,
+				9A0A72AB9F02E298775E511D163F96B0 /* DTRSA.m */,
+				B62EB07A42C423803C880BF6D4EFBA47 /* Pod */,
+				C390E781CD5791D6A87380B6674D5DDC /* Support Files */,
 			);
 			name = ObjcRSA;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B9283D08954750C2F5E0B5EBFF1FF004 /* Products */ = {
+		841021056BCE3C17CDB3BC4941A6F8A3 /* Pods-ObjcRSA_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				133A0C9B8029B273E346D0C4C648BBC0 /* ObjcRSA.framework */,
-				DD58E8071E51E2AB552B963624C73629 /* Pods_ObjcRSA_Example.framework */,
-				2AE5960481077007A983A4B6CA324B19 /* Pods_ObjcRSA_Tests.framework */,
+				B5F3DBD9261E9D28DAA2EFF9B418698D /* Pods-ObjcRSA_Tests-acknowledgements.markdown */,
+				A9DA35C68E5B65DCFD33D92C33E93263 /* Pods-ObjcRSA_Tests-acknowledgements.plist */,
+				C950916497AE01D50DFFB34F28474FCA /* Pods-ObjcRSA_Tests-dummy.m */,
+				B702896875950330299949AEB31E34DD /* Pods-ObjcRSA_Tests.debug.xcconfig */,
+				D7DB33AA0BBF0142C240754C35189F7B /* Pods-ObjcRSA_Tests.release.xcconfig */,
+			);
+			name = "Pods-ObjcRSA_Tests";
+			path = "Target Support Files/Pods-ObjcRSA_Tests";
+			sourceTree = "<group>";
+		};
+		9A79B2CC3A30AB37935E9D223A1F6FD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				133A0C9B8029B273E346D0C4C648BBC0 /* libObjcRSA.a */,
+				DD58E8071E51E2AB552B963624C73629 /* libPods-ObjcRSA_Example.a */,
+				2AE5960481077007A983A4B6CA324B19 /* libPods-ObjcRSA_Tests.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA7312A85C39A690641FB7CE8226E2A1 /* Pods-ObjcRSA_Example */ = {
+		9E941502983E4E02BB2A2C746A4BEC53 /* Pods-ObjcRSA_Example */ = {
 			isa = PBXGroup;
 			children = (
-				F98A1CF9C8D9447F85F58E8413628F46 /* Pods-ObjcRSA_Example.modulemap */,
-				04E9401718C27BF9441C5FBD3FB254E9 /* Pods-ObjcRSA_Example-acknowledgements.markdown */,
-				F7A17EF499970CCA26E1F42DBD083B9C /* Pods-ObjcRSA_Example-acknowledgements.plist */,
-				C1802A5AE1D4E21DDC04E6DEDF2F0DC0 /* Pods-ObjcRSA_Example-dummy.m */,
-				0A30AE43FC863D64F22CE0B111E4A937 /* Pods-ObjcRSA_Example-frameworks.sh */,
-				7F9415540E484B5B8C0CA87F9DA03639 /* Pods-ObjcRSA_Example-Info.plist */,
-				3DDD4129E2E0C5F45424FDC51F9F651D /* Pods-ObjcRSA_Example-umbrella.h */,
-				54673E85537A7D4B19239A4050D8A62B /* Pods-ObjcRSA_Example.debug.xcconfig */,
-				8B31A3214E709BE23F1BF9B609CC2E1A /* Pods-ObjcRSA_Example.release.xcconfig */,
+				E161E8BECAE44D37D71E4BEC9E864CEB /* Pods-ObjcRSA_Example-acknowledgements.markdown */,
+				B14FAE46168BDC764D5FB0D75954E95D /* Pods-ObjcRSA_Example-acknowledgements.plist */,
+				11A127CBDF284D594584A655B83FF1C2 /* Pods-ObjcRSA_Example-dummy.m */,
+				DC4DB340B7F2A8D3D1AF6CA98BE12480 /* Pods-ObjcRSA_Example.debug.xcconfig */,
+				72C6136CFFA72DF5448429A69F1C6195 /* Pods-ObjcRSA_Example.release.xcconfig */,
 			);
 			name = "Pods-ObjcRSA_Example";
 			path = "Target Support Files/Pods-ObjcRSA_Example";
+			sourceTree = "<group>";
+		};
+		B62EB07A42C423803C880BF6D4EFBA47 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				53E820704450A595D12BB26DEE930159 /* LICENSE */,
+				C326DBB88042E751076F7F08B62BF726 /* ObjcRSA.podspec */,
+				5102B4C58B01138ABAF8E91569553B86 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C390E781CD5791D6A87380B6674D5DDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC7E804C87D9560BE540CB800AAB1E0E /* ObjcRSA.xcconfig */,
+				EBD407AC331162265157DF0F5908279B /* ObjcRSA-dummy.m */,
+				A5F49735F98ED85A3BE827A3F9E671C2 /* ObjcRSA-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ObjcRSA";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -197,33 +163,24 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				6782BF617AD43E1C02482F2D60C7A5A9 /* Development Pods */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				B9283D08954750C2F5E0B5EBFF1FF004 /* Products */,
-				F6317C71894807836664E2C7E1AE54E2 /* Targets Support Files */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9A79B2CC3A30AB37935E9D223A1F6FD2 /* Products */,
+				DD30A6DFD0D20158843E00CC94DC0B4A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D72C5B9C9C94EDB88C3AFD22C27250F5 /* Pods-ObjcRSA_Tests */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74571FF5DA42783B8E623D5845971F55 /* Pods-ObjcRSA_Tests.modulemap */,
-				4898D26E7D259784A4D2E3564DACE1BB /* Pods-ObjcRSA_Tests-acknowledgements.markdown */,
-				AD973D6589AE06430B01D0EE8DAFDDAF /* Pods-ObjcRSA_Tests-acknowledgements.plist */,
-				A01082F7B21364FC493A1C4F7D6E2038 /* Pods-ObjcRSA_Tests-dummy.m */,
-				30434EA68C9B59377DC01D3B66DFE509 /* Pods-ObjcRSA_Tests-Info.plist */,
-				97EFD92BCB56121BA8DFF5C256926C2D /* Pods-ObjcRSA_Tests-umbrella.h */,
-				702D5C55E29689196793C0E6CB3FE24F /* Pods-ObjcRSA_Tests.debug.xcconfig */,
-				8D92F4AADDF38333D27BB63CCAD7F3D0 /* Pods-ObjcRSA_Tests.release.xcconfig */,
 			);
-			name = "Pods-ObjcRSA_Tests";
-			path = "Target Support Files/Pods-ObjcRSA_Tests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F6317C71894807836664E2C7E1AE54E2 /* Targets Support Files */ = {
+		DD30A6DFD0D20158843E00CC94DC0B4A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA7312A85C39A690641FB7CE8226E2A1 /* Pods-ObjcRSA_Example */,
-				D72C5B9C9C94EDB88C3AFD22C27250F5 /* Pods-ObjcRSA_Tests */,
+				9E941502983E4E02BB2A2C746A4BEC53 /* Pods-ObjcRSA_Example */,
+				841021056BCE3C17CDB3BC4941A6F8A3 /* Pods-ObjcRSA_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -231,28 +188,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D723C411908B9C047AD4B7B9F67BB6D9 /* Headers */ = {
+		3930CB565E89E933DBEA8A0B3264C8A0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF6F90C654320F38C1E13FBCA844BC7 /* DTRSA.h in Headers */,
-				D58DA9CBC6076A1F973FD09B625CE484 /* ObjcRSA-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB82E3CDDBE8D67996C175D80B8F997C /* Headers */ = {
+		C4E5E2ED4B50B6C5C8325C3B36C4B5EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7BFBCFA32CA255EE2CF9CF157D8AC49 /* Pods-ObjcRSA_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF0477B418B56B793FF31CE3772AC970 /* Headers */ = {
+		E72FA5BC04CD85516B2D2552388EDD0F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E41E6171479C99E7438355CA879D1AE /* Pods-ObjcRSA_Example-umbrella.h in Headers */,
+				B59D59DB6BBA213D0D05754AAB713ADF /* DTRSA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +215,11 @@
 /* Begin PBXNativeTarget section */
 		02E7257DC521AC06C004190D7E273B69 /* ObjcRSA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858F7A5084E42A7FCA8749B8F0BD4B9E /* Build configuration list for PBXNativeTarget "ObjcRSA" */;
+			buildConfigurationList = 3EC015C7957A66C946FFCAD2001209EA /* Build configuration list for PBXNativeTarget "ObjcRSA" */;
 			buildPhases = (
-				D723C411908B9C047AD4B7B9F67BB6D9 /* Headers */,
-				5E1AC0C8000B80DD06709B2307956CD7 /* Sources */,
-				0BD6292366AE0CBA289C643668B7BAB8 /* Frameworks */,
-				FC19BE15987FAE2607906B3290B1656C /* Resources */,
+				E72FA5BC04CD85516B2D2552388EDD0F /* Headers */,
+				5EE7D75F2739CCC54C8271DB899C1629 /* Sources */,
+				22C53CAE17E22DA0292A5D476FE4A6F0 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,46 +227,44 @@
 			);
 			name = ObjcRSA;
 			productName = ObjcRSA;
-			productReference = 133A0C9B8029B273E346D0C4C648BBC0 /* ObjcRSA.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 133A0C9B8029B273E346D0C4C648BBC0 /* libObjcRSA.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		B2398C139758DA2314ADFA5C4211E604 /* Pods-ObjcRSA_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E12C03937F1C2441C2F624EF1291255D /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Tests" */;
+			buildConfigurationList = D91BD57701A6A4161B76DE2A79674895 /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Tests" */;
 			buildPhases = (
-				EB82E3CDDBE8D67996C175D80B8F997C /* Headers */,
-				9F5740DD1FE36CE5CB8DBE4437FA4702 /* Sources */,
-				81390788C66F0F2B2809E78F77168954 /* Frameworks */,
-				57042D65BF9B0458059EF617556D0FF3 /* Resources */,
+				3930CB565E89E933DBEA8A0B3264C8A0 /* Headers */,
+				CCF7C3D975ADB40A5C9264226204CF11 /* Sources */,
+				0C535F9CDFECA78E9573D3BDEBEC9CB5 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B58BD7246E63BC691ADBA068525CE1D3 /* PBXTargetDependency */,
+				8F34A1284C46E6E5CF0BD1E364546325 /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjcRSA_Tests";
 			productName = "Pods-ObjcRSA_Tests";
-			productReference = 2AE5960481077007A983A4B6CA324B19 /* Pods_ObjcRSA_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 2AE5960481077007A983A4B6CA324B19 /* libPods-ObjcRSA_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		FF6B5A93D1D07F35473DF91B9A5A33F1 /* Pods-ObjcRSA_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 360725601AA8E7CE12D31EC932F40749 /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Example" */;
+			buildConfigurationList = 27076C64EE56A9B0A79540825DD4938C /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Example" */;
 			buildPhases = (
-				EF0477B418B56B793FF31CE3772AC970 /* Headers */,
-				79CFFC51E0B655B5BFFFF5A80A7250B7 /* Sources */,
-				84C3B6C462D7BCAE914B3E50F47A96D0 /* Frameworks */,
-				061F4606CF8ECD9781F8423D5BB7F048 /* Resources */,
+				C4E5E2ED4B50B6C5C8325C3B36C4B5EA /* Headers */,
+				43766948524CEB049C877000AD00D0C3 /* Sources */,
+				812A359BA0E8CE0462FBF018FABDE9F7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DFF2FD627A7C468F975E9512553C482E /* PBXTargetDependency */,
+				C0983FA3C93C5437C530769A9C3A70AA /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjcRSA_Example";
 			productName = "Pods-ObjcRSA_Example";
-			productReference = DD58E8071E51E2AB552B963624C73629 /* Pods_ObjcRSA_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = DD58E8071E51E2AB552B963624C73629 /* libPods-ObjcRSA_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -333,7 +284,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B9283D08954750C2F5E0B5EBFF1FF004 /* Products */;
+			productRefGroup = 9A79B2CC3A30AB37935E9D223A1F6FD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -344,204 +295,74 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		061F4606CF8ECD9781F8423D5BB7F048 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57042D65BF9B0458059EF617556D0FF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC19BE15987FAE2607906B3290B1656C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		5E1AC0C8000B80DD06709B2307956CD7 /* Sources */ = {
+		43766948524CEB049C877000AD00D0C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916506C92ACA0303FC60A1AF718276B4 /* DTRSA.m in Sources */,
-				2396A575326F4E889D6CC6C0EA7275ED /* ObjcRSA-dummy.m in Sources */,
+				A4CA02B70A1EC6A0A62A4CC1032A1B54 /* Pods-ObjcRSA_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79CFFC51E0B655B5BFFFF5A80A7250B7 /* Sources */ = {
+		5EE7D75F2739CCC54C8271DB899C1629 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4754BFFDE992BF9D46ED10BFB640D21 /* Pods-ObjcRSA_Example-dummy.m in Sources */,
+				3F48EB29F7D86F81F90BBD5FDC05252A /* DTRSA.m in Sources */,
+				D571F3115342DC818BC031DFCBC7F9D8 /* ObjcRSA-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F5740DD1FE36CE5CB8DBE4437FA4702 /* Sources */ = {
+		CCF7C3D975ADB40A5C9264226204CF11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6192E1CE27AB648761C72948228D7EE3 /* Pods-ObjcRSA_Tests-dummy.m in Sources */,
+				F580A5F1BEC4E430AEC4B4469D26E2AB /* Pods-ObjcRSA_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B58BD7246E63BC691ADBA068525CE1D3 /* PBXTargetDependency */ = {
+		8F34A1284C46E6E5CF0BD1E364546325 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ObjcRSA_Example";
 			target = FF6B5A93D1D07F35473DF91B9A5A33F1 /* Pods-ObjcRSA_Example */;
-			targetProxy = 7B38F978982921CEEAB9D39828EDBABD /* PBXContainerItemProxy */;
+			targetProxy = A1C19B9DA406B28E262375840B8A45C6 /* PBXContainerItemProxy */;
 		};
-		DFF2FD627A7C468F975E9512553C482E /* PBXTargetDependency */ = {
+		C0983FA3C93C5437C530769A9C3A70AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjcRSA;
 			target = 02E7257DC521AC06C004190D7E273B69 /* ObjcRSA */;
-			targetProxy = 1B1431AD4D15389BC15893210E6BC0EC /* PBXContainerItemProxy */;
+			targetProxy = 4C55A0309521DB98AD5DB54EB8D2DCCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		069F9A82155A1BB2F90A49817ED4A6E3 /* Debug */ = {
+		457F8BD8008F30DA3198DA92E3B3E7DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54673E85537A7D4B19239A4050D8A62B /* Pods-ObjcRSA_Example.debug.xcconfig */;
+			baseConfigurationReference = FC7E804C87D9560BE540CB800AAB1E0E /* ObjcRSA.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcRSA/ObjcRSA-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		09ADF61B45F421F6021C5E28C9D5879E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 367C220B93132BDF6F1CD9774315EB36 /* ObjcRSA.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ObjcRSA/ObjcRSA-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjcRSA/ObjcRSA-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjcRSA/ObjcRSA.modulemap";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = ObjcRSA;
 				PRODUCT_NAME = ObjcRSA;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		224C5442906CD94254F1C83E4A225A47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D92F4AADDF38333D27BB63CCAD7F3D0 /* Pods-ObjcRSA_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		484CADCA57CEFA973180FE04EC8ACEFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 702D5C55E29689196793C0E6CB3FE24F /* Pods-ObjcRSA_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjcRSA_Tests/Pods-ObjcRSA_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -600,6 +421,52 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5C3AF19B845AD2DE007CB08EDBFE5974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7E804C87D9560BE540CB800AAB1E0E /* ObjcRSA.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcRSA/ObjcRSA-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ObjcRSA;
+				PRODUCT_NAME = ObjcRSA;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F8600AF04BA62645C37B2E1AA43BACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C6136CFFA72DF5448429A69F1C6195 /* Pods-ObjcRSA_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -667,80 +534,87 @@
 			};
 			name = Debug;
 		};
-		BABF232CCE68464FA1B417B8045B2229 /* Release */ = {
+		CFDFEB8A0C2A51AC820FA62E46FFD32C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 367C220B93132BDF6F1CD9774315EB36 /* ObjcRSA.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ObjcRSA/ObjcRSA-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ObjcRSA/ObjcRSA-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ObjcRSA/ObjcRSA.modulemap";
-				PRODUCT_MODULE_NAME = ObjcRSA;
-				PRODUCT_NAME = ObjcRSA;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F642D816EF9F844B252DE172F5DBA16A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B31A3214E709BE23F1BF9B609CC2E1A /* Pods-ObjcRSA_Example.release.xcconfig */;
+			baseConfigurationReference = DC4DB340B7F2A8D3D1AF6CA98BE12480 /* Pods-ObjcRSA_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ObjcRSA_Example/Pods-ObjcRSA_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB132032FFA089E94A4C7A3224189109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B702896875950330299949AEB31E34DD /* Pods-ObjcRSA_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F75C1AC30501CD3989489B44B017387D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DB33AA0BBF0142C240754C35189F7B /* Pods-ObjcRSA_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		360725601AA8E7CE12D31EC932F40749 /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Example" */ = {
+		27076C64EE56A9B0A79540825DD4938C /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				069F9A82155A1BB2F90A49817ED4A6E3 /* Debug */,
-				F642D816EF9F844B252DE172F5DBA16A /* Release */,
+				CFDFEB8A0C2A51AC820FA62E46FFD32C /* Debug */,
+				5F8600AF04BA62645C37B2E1AA43BACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EC015C7957A66C946FFCAD2001209EA /* Build configuration list for PBXNativeTarget "ObjcRSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3AF19B845AD2DE007CB08EDBFE5974 /* Debug */,
+				457F8BD8008F30DA3198DA92E3B3E7DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -754,20 +628,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858F7A5084E42A7FCA8749B8F0BD4B9E /* Build configuration list for PBXNativeTarget "ObjcRSA" */ = {
+		D91BD57701A6A4161B76DE2A79674895 /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09ADF61B45F421F6021C5E28C9D5879E /* Debug */,
-				BABF232CCE68464FA1B417B8045B2229 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E12C03937F1C2441C2F624EF1291255D /* Build configuration list for PBXNativeTarget "Pods-ObjcRSA_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				484CADCA57CEFA973180FE04EC8ACEFD /* Debug */,
-				224C5442906CD94254F1C83E4A225A47 /* Release */,
+				DB132032FFA089E94A4C7A3224189109 /* Debug */,
+				F75C1AC30501CD3989489B44B017387D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

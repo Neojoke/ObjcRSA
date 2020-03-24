@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ObjcRSA'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '使用Security库进行简单的RSA加解密'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'ObjcRSA' => ['ObjcRSA/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'ObjcRSA/Classes/**/*.h'
    s.frameworks = 'Security'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
