@@ -260,7 +260,7 @@ static NSData *base64_decode(NSString *str){
         
         if (isSign) {
             status = SecKeyRawSign(keyRef,
-                                   kSecPaddingPKCS1,
+                                   kSecPaddingPKCS1SHA1,
                                    srcbuf + idx,
                                    data_len,
                                    outbuf,

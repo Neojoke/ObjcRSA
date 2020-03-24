@@ -7,7 +7,7 @@
 //
 
 #import "DTViewController.h"
-#import <ObjcRSA>
+#import <ObjcRSA/DTRSA.h>
 @interface DTViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   DTRSA decryptString:<#(nonnull NSString *)#> privateKey:<#(nonnull NSString *)#>
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

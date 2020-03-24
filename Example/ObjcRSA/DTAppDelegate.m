@@ -7,6 +7,7 @@
 //
 
 #import "DTAppDelegate.h"
+#import <ObjcRSA/DTRSA.h>
 @implementation DTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
