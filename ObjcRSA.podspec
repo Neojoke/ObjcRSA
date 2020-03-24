@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wupeng01/ObjcRSA'
+  s.homepage         = 'https://github.com/Neojoke/ObjcRSA'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wupeng01' => 'wupeng@ppdai.com' }
-  s.source           = { :git => 'https://github.com/wupeng01/ObjcRSA.git', :tag => s.version.to_s }
+  s.author           = { 'Neojoke' => '394570610@qq.com' }
+  s.source           = { :git => 'https://github.com/Neojoke/ObjcRSA.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
