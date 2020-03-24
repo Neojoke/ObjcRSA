@@ -1,0 +1,16 @@
+PODS:
+  - ObjcRSA (0.1.0)
+
+DEPENDENCIES:
+  - ObjcRSA (from `../`)
+
+EXTERNAL SOURCES:
+  ObjcRSA:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ObjcRSA: e7b16d7b7d4765cd0b8496fb8350fdf3feea2e2a
+
+PODFILE CHECKSUM: 448330e8e33e839bd4a2c4c63ea17a5f30ff7531
+
+COCOAPODS: 1.8.4
