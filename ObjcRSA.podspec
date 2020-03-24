@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ObjcRSA'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = '使用Security库进行简单的RSA加解密'
 
 # This description is used to generate tags and improve search results.
