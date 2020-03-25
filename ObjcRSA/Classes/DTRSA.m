@@ -8,19 +8,23 @@
 
 #import "DTRSA.h"
 #import <Security/Security.h>
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
+#define kChosenDigestLength CC_SHA1_DIGEST_LENGTH  // SHA-1消息摘要的数据位数160位
+
 @implementation DTRSA
 
 
 
 /*
-static NSString *base64_encode(NSString *str){
-    NSData* data = [str dataUsingEncoding:NSUTF8StringEncoding];
-    if(!data){
-        return nil;
-    }
-    return base64_encode_data(data);
-}
-*/
+ static NSString *base64_encode(NSString *str){
+ NSData* data = [str dataUsingEncoding:NSUTF8StringEncoding];
+ if(!data){
+ return nil;
+ }
+ return base64_encode_data(data);
+ }
+ */
 
 static NSString *base64_encode_data(NSData *data){
     data = [data base64EncodedDataWithOptions:0];
@@ -71,15 +75,15 @@ static NSData *base64_decode(NSString *str){
 + (NSData *)stripPrivateKeyHeader:(NSData *)d_key{
     // Skip ASN.1 private key header
     if (d_key == nil) return(nil);
-
+    
     unsigned long len = [d_key length];
     if (!len) return(nil);
-
+    
     unsigned char *c_key = (unsigned char *)[d_key bytes];
     unsigned int  idx     = 22; //magic byte at offset 22
-
+    
     if (0x04 != c_key[idx++]) return nil;
-
+    
     //calculate length of the key
     unsigned int c_len = c_key[idx++];
     int det = c_len & 0x80;
@@ -101,7 +105,7 @@ static NSData *base64_decode(NSString *str){
         }
         c_len = accum;
     }
-
+    
     // Now make a new NSData from this buffer
     return [d_key subdataWithRange:NSMakeRange(idx, c_len)];
 }
@@ -126,7 +130,7 @@ static NSData *base64_decode(NSString *str){
     if(!data){
         return nil;
     }
-
+    
     //a tag to read/write keychain storage
     NSString *tag = @"RSAUtil_PubKey";
     NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
@@ -153,7 +157,7 @@ static NSData *base64_decode(NSString *str){
     if ((status != noErr) && (status != errSecDuplicateItem)) {
         return nil;
     }
-
+    
     [publicKey removeObjectForKey:(__bridge id)kSecValueData];
     [publicKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
     [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
@@ -188,32 +192,32 @@ static NSData *base64_decode(NSString *str){
     key = [key stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     key = [key stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     key = [key stringByReplacingOccurrencesOfString:@" "  withString:@""];
-
+    
     // This will be base64 encoded, decode it.
     NSData *data = base64_decode(key);
     data = [DTRSA stripPrivateKeyHeader:data];
     if(!data){
         return nil;
     }
-
+    
     //a tag to read/write keychain storage
     NSString *tag = @"RSAUtil_PrivKey";
     NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-
+    
     // Delete any old lingering key with the same tag
     NSMutableDictionary *privateKey = [[NSMutableDictionary alloc] init];
     [privateKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
     [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
     [privateKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
     SecItemDelete((__bridge CFDictionaryRef)privateKey);
-
+    
     // Add persistent version of the key to system keychain
     [privateKey setObject:data forKey:(__bridge id)kSecValueData];
     [privateKey setObject:(__bridge id) kSecAttrKeyClassPrivate forKey:(__bridge id)
      kSecAttrKeyClass];
     [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
      kSecReturnPersistentRef];
-
+    
     CFTypeRef persistKey = nil;
     OSStatus status = SecItemAdd((__bridge CFDictionaryRef)privateKey, &persistKey);
     if (persistKey != nil){
@@ -222,12 +226,12 @@ static NSData *base64_decode(NSString *str){
     if ((status != noErr) && (status != errSecDuplicateItem)) {
         return nil;
     }
-
+    
     [privateKey removeObjectForKey:(__bridge id)kSecValueData];
     [privateKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
     [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
     [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-
+    
     // Now fetch the SecKeyRef version of the key
     SecKeyRef keyRef = nil;
     status = SecItemCopyMatching((__bridge CFDictionaryRef)privateKey, (CFTypeRef *)&keyRef);
@@ -418,4 +422,186 @@ static NSData *base64_decode(NSString *str){
 }
 
 /* END: Encryption & Decryption with RSA public key */
+
+
+
+
++ (NSString *)signSHA1WithRSA:(NSString *)plainText privateKey:(NSString *)privateKey{
+    
+    uint8_t* signedBytes = NULL;
+    
+    size_t signedBytesSize = 0;
+    
+    OSStatus sanityCheck = noErr;
+    
+    NSData* signedHash = nil;
+    
+    SecKeyRef privateKeyRef = [self addPrivateKey:privateKey];
+    
+    signedBytesSize = SecKeyGetBlockSize(privateKeyRef);
+    
+    NSData *plainTextBytes = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+    
+    signedBytes = malloc( signedBytesSize * sizeof(uint8_t) );
+    
+    memset((void  *)signedBytes, 0x0, signedBytesSize);
+    
+    sanityCheck = SecKeyRawSign(privateKeyRef,
+                                
+                                kSecPaddingPKCS1SHA1,
+                                
+                                (const uint8_t *)[[self getHashBytes:plainTextBytes] bytes],
+                                
+                                kChosenDigestLength,
+                                
+                                (uint8_t *)signedBytes,
+                                
+                                &signedBytesSize);
+    
+    if (sanityCheck == noErr){
+        
+        signedHash = [NSData dataWithBytes:(const void  *)signedBytes length:(NSUInteger)signedBytesSize];
+        
+    }
+    
+    else{
+        
+        return nil;
+        
+    }
+    
+    if (signedBytes){
+        
+        free(signedBytes);
+        
+    }
+    
+    NSString *signatureResult = [self base64EncodeData:signedHash];
+    
+    return signatureResult;
+    
+}
+
+
+
+
++ (NSData *)getHashBytes:(NSData *)plainText {
+    
+    CC_SHA1_CTX ctx;
+    
+    uint8_t * hashBytes = NULL;
+    
+    NSData * hash = nil;
+    
+    // Malloc a buffer to hold hash.
+    
+    hashBytes = malloc( kChosenDigestLength * sizeof(uint8_t) );
+    
+    memset((void  *)hashBytes, 0x0, kChosenDigestLength);
+    
+    // Initialize the context.
+    
+    CC_SHA1_Init(&ctx);
+    
+    // Perform the hash.
+    
+    CC_SHA1_Update(&ctx, (void  *)[plainText bytes], [plainText length]);
+    
+    // Finalize the output.
+    
+    CC_SHA1_Final(hashBytes, &ctx);
+    
+    // Build up the SHA1 blob.
+    
+    hash = [NSData dataWithBytes:(const void  *)hashBytes length:(NSUInteger)kChosenDigestLength];
+    
+    if (hashBytes) free(hashBytes);
+    
+    return hash;
+    
+}
+
+
+
+
+
+
+
+
+#pragma mark - SHA1+RSA 验签
+
++ (BOOL)verifySHA1WithRSA:(NSString *)plainString signature:(NSString *)signatureString publicKey:(NSString *)publicKeyString{
+    
+    NSData *plainData = [plainString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSData *signatureData = [self base64DecodeString:signatureString];
+    
+    SecKeyRef publicKey = [self addPublicKey:publicKeyString];
+    
+    size_t signedHashBytesSize = SecKeyGetBlockSize(publicKey);
+    
+    const void* signedHashBytes = [signatureData bytes];
+    
+    size_t hashBytesSize = CC_SHA1_DIGEST_LENGTH;
+    
+    uint8_t* hashBytes = malloc(hashBytesSize);
+    
+    if (!CC_SHA1([plainData bytes], (CC_LONG)[plainData length], hashBytes)) {
+        
+        return NO;
+        
+    }
+    
+    OSStatus status = SecKeyRawVerify(publicKey,
+                                      
+                                      kSecPaddingPKCS1SHA1,
+                                      
+                                      hashBytes,
+                                      
+                                      hashBytesSize,
+                                      
+                                      signedHashBytes,
+                                      
+                                      signedHashBytesSize);
+    
+    return status == errSecSuccess;
+    
+}
+
+
+
+
+#pragma mark - Base64
+
++ (NSString *)base64EncodeData:(NSData *)data{
+    
+    data = [data base64EncodedDataWithOptions:0];
+    
+    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    return ret;
+    
+}
+
+
+
+
++ (NSData *)base64DecodeString:(NSString *)string{
+    
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:string options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    
+    return data;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 @end

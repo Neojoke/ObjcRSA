@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   DTRSA decryptString:<#(nonnull NSString *)#> privateKey:<#(nonnull NSString *)#>
+    [DTRSA signSHA1WithRSA:@"" privateKey:@""];
+    [DTRSA verifySHA1WithRSA:@"" signature:@"" publicKey:@""];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

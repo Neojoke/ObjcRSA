@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSData *)decryptData:(NSData *)data publicKey:(NSString *)pubKey;
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey;
 + (NSData *)decryptData:(NSData *)data privateKey:(NSString *)privKey;
+
++ (BOOL)verifySHA1WithRSA:(NSString *)plainString signature:(NSString *)signatureString publicKey:(NSString *)publicKeyString;
++ (NSString *)signSHA1WithRSA:(NSString *)plainText privateKey:(NSString *)privateKey;
 @end
 
 NS_ASSUME_NONNULL_END
